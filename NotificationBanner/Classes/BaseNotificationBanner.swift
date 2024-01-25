@@ -191,7 +191,6 @@ open class BaseNotificationBanner: UIView {
         get {
             return contentView.backgroundColor
         } set {
-            guard style != .customView else { return }
             let color = newValue?.withAlphaComponent(transparency)
             contentView.backgroundColor = color
             spacerView.backgroundColor = color
